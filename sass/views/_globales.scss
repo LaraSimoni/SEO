@@ -1,0 +1,75 @@
+/*FONDO IMG TODAS LAS PAGINAS Y TÍTULO*/
+
+main{
+    background-color: $primary;
+
+    .fondoDiv{
+        height: 40rem;
+        background-image: url("https://cdn.pixabay.com/photo/2017/07/21/23/57/concert-2527495_960_720.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        .fondoDiv h1 {
+            padding: 17rem;
+            color: white;
+            text-align: center;
+            font-size: map-get($headings, h1 );
+            font-weight: lighter;
+            font-family: 'Trebuchet MS';
+        }
+
+    .segundaparte h2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-top: 20px;
+        line-height: 100px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: map-get($headings, h2 );
+        font-family: 'Trebuchet MS';
+        text-transform: uppercase;
+    }
+
+    .segundaparte p{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-top: 10px;
+        text-align: center;
+        font-size: map-get($headings, h2 );
+    }
+    
+    .tituloUno{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+}
+
+
+//Media queries
+
+@media (min-width:320px) and (max-width: 640px) {
+    main{
+        .fondoDiv {
+            height: 25rem;
+        }
+        .fondoDiv h1{
+            padding: 10rem;
+            font-size: 35px;
+        }
+
+        .segundaparte h2{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    main{
+        .segundaparte h2{
+            font-size: $xxsmall;
+        }
+    }
+}

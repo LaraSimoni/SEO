@@ -1,0 +1,21 @@
+//GLOBALES
+
+@include reset;
+
+html{
+    @include html;
+}
+
+body {
+    font-family: $secondary;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+

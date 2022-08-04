@@ -1,0 +1,63 @@
+/*NOSOTROS*/
+    
+.soyYo{  
+
+    .imgYo{ 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 100px;
+        margin-top: 10px;
+        padding-bottom: 50px;
+
+        .soy__yo{  
+            width: 500px;
+            height: 570px;
+            padding: 5rem;
+            }
+    }
+
+    .textoImgYo {
+        font-size: $xsmall;
+        text-align: left;
+        font-style: italic;
+        font-family: $font-principal;
+        align-items: center;
+    }
+}
+
+
+//Media queries
+
+@media screen and (max-width:1063px) {
+    .soyYo{
+        .imgYo{
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .textoImgYo{
+            padding-left: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            padding-right: 100px;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width: 640px) {
+    .soyYo {
+        .imgYo{
+            .soy__yo {
+                width: 400px;
+                height: 470px;
+            }
+        }
+        .textoImgYo{
+            font-size: $xxsmall;
+            padding: 1rem;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+
